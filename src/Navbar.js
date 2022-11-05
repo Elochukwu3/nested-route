@@ -29,22 +29,22 @@ export default function Navbar() {
             </NavLink>
           </span>
           <span>
-            <NavLink>About</NavLink>
+            <NavLink to={"/about"}>About</NavLink>
           </span>
           <span>
-            <NavLink>Designers</NavLink>
+            <NavLink to={"/highfashion"}>Designers</NavLink>
           </span>
           <span>
-            <NavLink>Store</NavLink>
+            <NavLink to={'stores'}>Store</NavLink>
           </span>
           <span>
-            <NavLink>Profile</NavLink>
+            <NavLink to={'/profile'}>Profile</NavLink>
           </span>
         </nav>
 
         <ul className="sect-two-nav">
           <li>
-            <NavLink>
+            <NavLink to={'/search'}>
               <i className="fas fa-search"></i>
             </NavLink>
           </li>
