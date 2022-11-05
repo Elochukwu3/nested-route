@@ -1,6 +1,5 @@
 import React from "react";
 import{Routes, Route} from "react-router-dom"
-// import Home from './pages/Home';
 import About from './pages/About';
 import Profile from './pages/Profile';
 import HighFashion from './pages/HighFashion';
@@ -18,7 +17,7 @@ function App() {
     <div className="App">
       <Navbar/>
        <Routes>
-        <Route path="/" element={<React.Suspense fallback={console.log("nulll")}><LazyHome/></React.Suspense>}/>
+        <Route path="/" element={<React.Suspense fallback={"loading..."}><LazyHome/></React.Suspense>}/>
         <Route path="about" element={<About/>}/>
         <Route path="profile" element={<Profile/>}/>
         <Route path="highfashion" element={<HighFashion/>}/>
