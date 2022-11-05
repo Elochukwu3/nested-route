@@ -1,19 +1,22 @@
 import React from 'react';
-import {NavLink} from "react-router-dom"
+import {NavLink, Outlet} from "react-router-dom"
 
 export default function Store() {
   return (
+    <>
     <div>
      <p> <input type={'search'}/></p>
-      <NavLink>
+      <NavLink to={'newproduct'}>
         New Product
       </NavLink>
-      <NavLink>
+      <NavLink to={'menproduct'}>
         Men Wears
       </NavLink>
-      <NavLink>
+      <NavLink to={'womenproduct'}>
         Women Wears
       </NavLink>
     </div>
+    <Outlet/>
+    </>
   )
 }
