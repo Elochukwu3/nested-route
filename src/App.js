@@ -1,6 +1,6 @@
 import React from "react";
 import{Routes, Route} from "react-router-dom"
-import Home from './pages/Home';
+// import Home from './pages/Home';
 import About from './pages/About';
 import Profile from './pages/Profile';
 import HighFashion from './pages/HighFashion';
@@ -8,7 +8,9 @@ import Store from './pages/Store';
 import NewProduct from './pages/NewProduct';
 import MenProduct from './pages/MenProduct';
 import WomenProduct from './pages/WomenProduct';
+import ErrorPage from './pages/ErrorPage';
 import Navbar from './Navbar'
+const LazyHome = React.lazy(()=> import('./pages/Home'))
 
 
 function App() {
@@ -16,10 +18,11 @@ function App() {
     <div className="App">
       <Navbar/>
        <Routes>
-        <Route path="/" element={<Home/>}/>
+        <Route path="/" element={<React.Suspense fallback={console.log("nulll")}><LazyHome/></React.Suspense>}/>
         <Route path="about" element={<About/>}/>
         <Route path="profile" element={<Profile/>}/>
         <Route path="highfashion" element={<HighFashion/>}/>
+        <Route path="*" element={<ErrorPage/>}/>
         <Route path="store" element={<Store/>}>
           <Route path="newproduct" element={<NewProduct/>}/>
           <Route path="menproduct" element={<MenProduct/>}/>
