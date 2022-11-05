@@ -98,7 +98,7 @@
     filter: brightness(1);
     opacity: 1;
     height: 100%;
-    width: 100%;
+    width: 100vw;
 }
 .btns{
     position: absolute;
@@ -123,4 +123,70 @@
     background: rgb(255, 255, 255);
     color: #000;
     border-color: transparent;
+}
+.navText{
+    position: absolute;
+    z-index: 2;
+    color: #fff;
+    background-color: transparent;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    /* justify-content: center; */
+    width: 100%;
+    margin-top: 4rem;
+}
+.navText h2{
+    font-size: 32px;
+    font-family: sans-serif;
+    padding-bottom: .5rem;
+}
+.navText p{
+    font-size: 16px;
+    padding-top: .5rem;
+    font-weight: 800;
+    word-break: break-all;
+    word-spacing: .1rem;
+}
+.navText > div{
+    padding-top: 1.3rem;
+    padding-bottom: 2rem;
+}
+.navText form{
+    width: 50%;
+    position: relative;
+}
+.navText form i{
+    position: absolute;
+    left: 2%;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    color: #6e6d7a;
+}
+.navText input{
+    font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+    height: 40px;
+    padding: 10px 19px;
+    padding-left: 2rem;
+    -webkit-transition: background-color 200ms ease, outline 200ms ease, color 200ms ease, -webkit-box-shadow 200ms ease;
+    transition: background-color 200ms ease, outline 200ms ease, color 200ms ease, -webkit-box-shadow 200ms ease;
+    transition: background-color 200ms ease, outline 200ms ease, color 200ms ease, box-shadow 200ms ease;
+    transition: background-color 200ms ease, outline 200ms ease, color 200ms ease, box-shadow 200ms ease, -webkit-box-shadow 200ms ease;
+    border-radius: 18px;
+    outline: none;
+    background-color: #f3f3f4;
+    color: #0d0c22;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: unset;
 }
