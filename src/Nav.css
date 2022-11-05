@@ -100,3 +100,27 @@
     height: 100%;
     width: 100%;
 }
+.btns{
+    position: absolute;
+    z-index: 2;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    padding: 0 2rem;
+}
+.btns button{
+    margin: 0;
+    padding: 10px 20px;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    border-radius: 50px;
+    background: rgba(0,0,0,0.5);
+    color: #fff;
+    font-size: 16px;
+    /* border: unset; */
+}
+.btns button:hover, .btns button:focus{
+    background: rgb(255, 255, 255);
+    color: #000;
+    border-color: transparent;
+}

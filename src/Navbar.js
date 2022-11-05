@@ -54,9 +54,23 @@ export default function Navbar() {
         </ul>
       </div>
       <div className="backgroundVideo">
+            <div className="btns">
+           <p> <button>Discover</button></p>
+         <p><button>Animations</button> </p>
+           <p> <button>Direction</button> </p>
+           <p> <button>Article</button> </p>
+           <p> <button>Designer</button> </p>
+           <p> <button>FootWears</button> </p>
+           <p> <button>Brands</button> </p>
+           <p> <button>Blog</button> </p>
+            </div>
+            <div>
+                <h2>Explore the world’s leading</h2>
+                <h2>design portfolios</h2>
+            </div>
         <div className="videoWrap">
-        <Video/>
-
+         <Video/>
+        
         </div>
       </div>
     </section>
