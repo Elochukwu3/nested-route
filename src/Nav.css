@@ -1,0 +1,96 @@
+*::after, *::before, *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+}
+.nav-container{
+    display: flex;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    margin-right: 24px;
+    margin-left: 24px;
+    align-items: center;
+    padding: 1rem 0;
+    width: auto;
+    background-color: #fff;
+    border-bottom: 1px solid #6e6d7a;
+}
+.nav-container a{
+    color:  #6e6d7a;
+    font-size: 1.2rem;
+}
+.signUp a{
+    display: inline-block;
+    position: relative;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    height: 40px;
+    padding: 10px 16px;
+    -webkit-transition: color 200ms ease;
+    transition: color 200ms ease;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    background: #ea4c89;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+}
+.nav-container nav span{
+    padding-right: 16px;
+    padding-left: 16px;
+    text-transform: capitalize;
+    font-weight: 400;
+}
+.nav-container nav{
+    display: flex;
+    align-items: center;
+}
+.sect-two-nav{
+    display: flex;
+    align-items: center;
+}
+.sect-two-nav li{
+    padding: 0 1.2rem;
+}
+.backgroundVideo{
+    position: relative;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    max-width: 100%;
+    height: 560px;
+    padding: 50px 20px;
+    overflow: hidden;
+    /* background: #000 */
+}
+.videoWrap{
+    display: -ms-flexbox;
+    display: flex;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-filter: brightness(0.3);
+    filter: brightness(0.3);
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+.videotag{
+    position: absolute;
+    height: auto;
+    
+}
