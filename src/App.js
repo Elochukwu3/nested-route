@@ -4,6 +4,7 @@ import Home from './pages/Home';
 import About from './pages/About';
 import Profile from './pages/Profile';
 import HighFashion from './pages/HighFashion';
+import Store from './pages/Store';
 import Navbar from './Navbar'
 
 function App() {
