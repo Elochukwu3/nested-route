@@ -35,7 +35,7 @@ export default function Navbar() {
             <NavLink to={"/highfashion"}>Designers</NavLink>
           </span>
           <span>
-            <NavLink to={'stores'}>Store</NavLink>
+            <NavLink to={'/store'}>Store</NavLink>
           </span>
           <span>
             <NavLink to={'/profile'}>Profile</NavLink>
