@@ -1,7 +1,9 @@
 import React from 'react';
-
+import image from '../plays/img1.jpeg'
 export default function Home() {
   return (
-    <div>Home</div>
+    <div className='home-container'>
+        <img src={image} alt="images"/>
+    </div>
   )
 }

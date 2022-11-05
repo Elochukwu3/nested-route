@@ -1,3 +1,18 @@
+body{
+    min-height: 100vh;
+        font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 28px;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        height: 100%;
+        overflow-x: hidden;
+        background: #fff;
+        color: #0d0c22;
+}
 *::after, *::before, *{
     margin: 0;
     padding: 0;
@@ -189,4 +204,14 @@
     -moz-appearance: none;
     appearance: none;
     border: unset;
+}
+.home-container{
+    width: 100%;
+    padding: 1.6rem;
+}
+.home-container img{
+    width: 30%;
+    height: 40vh;
+    object-fit: cover;
+    border-radius: 8px;
 }
