@@ -7,6 +7,7 @@ import HighFashion from './pages/HighFashion';
 import Store from './pages/Store';
 import Navbar from './Navbar'
 
+
 function App() {
   return (
     <div className="App">
