@@ -1,12 +1,16 @@
 import React from "react";
 import {useAuthentication} from './auth'
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import "./Nav.css";
 import { Video } from "./Video";
 
 export default function Navbar() {
-  const{user} = useAuthentication()
- 
+  const{user, logOut} = useAuthentication()
+ const navigate = useNavigate()
+  const signOut =()=>{
+    logOut()
+    navigate('/')
+  }
   return (
     <section>
       <div className="nav-container">
@@ -53,7 +57,7 @@ export default function Navbar() {
           </li>
           <li className="signUp">
             {
-              !user ? <NavLink to={'/signin'}>Sign up</NavLink>: <NavLink onClick={()=>alert('bye')}>Sign Out</NavLink>
+              !user ? <NavLink to={'/signin'}>Sign up</NavLink>: <NavLink onClick={signOut}>Sign Out</NavLink>
             }
           </li>
         </ul>

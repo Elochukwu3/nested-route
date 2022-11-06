@@ -8,7 +8,7 @@ export const SignIn = () => {
 
   const navigatePage =()=>{
     logIn(input)
-    navigate('/')
+    navigate('/', {replace: true})
     
   }
   return (
