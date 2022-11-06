@@ -1,9 +1,12 @@
 import React from "react";
+import {useAuthentication} from './auth'
 import { NavLink } from "react-router-dom";
 import "./Nav.css";
 import { Video } from "./Video";
 
 export default function Navbar() {
+  const{user} = useAuthentication()
+ 
   return (
     <section>
       <div className="nav-container">
@@ -49,7 +52,9 @@ export default function Navbar() {
             </NavLink>
           </li>
           <li className="signUp">
-            <NavLink>Sign up</NavLink>
+            {
+              !user ? <NavLink to={'/signin'}>Sign up</NavLink>: <NavLink to={'/signout'}>Sign Out</NavLink>
+            }
           </li>
         </ul>
       </div>
