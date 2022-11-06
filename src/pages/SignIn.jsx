@@ -6,7 +6,7 @@ export const SignIn = () => {
   const {changeInput, input, logIn}= useAuthentication();
   const navigate = useNavigate();//useNavigate 
   const location = useLocation()
-  const reDirect = location.state?.path || '/'
+  const reDirect = location.state?.path || '/profile'
 
   const navigatePage =()=>{
     logIn(input)
