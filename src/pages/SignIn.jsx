@@ -3,7 +3,7 @@ import {useNavigate} from 'react-router-dom'
 import {useAuthentication} from '../auth'
 
 export const SignIn = () => {
-  const {changeInput, input, logIn, user}= useAuthentication();
+  const {changeInput, input, logIn}= useAuthentication();
   const navigate = useNavigate();
 
   const navigatePage =()=>{

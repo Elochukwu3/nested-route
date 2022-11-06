@@ -53,7 +53,7 @@ export default function Navbar() {
           </li>
           <li className="signUp">
             {
-              !user ? <NavLink to={'/signin'}>Sign up</NavLink>: <NavLink to={'/signout'}>Sign Out</NavLink>
+              !user ? <NavLink to={'/signin'}>Sign up</NavLink>: <NavLink onClick={()=>alert('bye')}>Sign Out</NavLink>
             }
           </li>
         </ul>
