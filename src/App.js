@@ -11,6 +11,7 @@ import WomenProduct from './pages/WomenProduct';
 import ErrorPage from './pages/ErrorPage';
 import {SignIn} from './pages/SignIn';
 import Navbar from './Navbar'
+import {AuthProfile} from './AuthProfile'
 const LazyHome = React.lazy(()=> import('./pages/Home'))
 
 
@@ -23,7 +24,7 @@ function App() {
        <Routes>
         <Route path="/" element={<React.Suspense fallback={"loading..."}><LazyHome/></React.Suspense>}/>
         <Route path="about" element={<About/>}/>
-        <Route path="profile" element={<Profile/>}/>
+        <Route path="profile" element={<AuthProfile><Profile/></AuthProfile>}/>
         <Route path="highfashion" element={<HighFashion/>}/>
         <Route path="*" element={<ErrorPage/>}/>
         <Route path="signin" element={<SignIn />}/>
