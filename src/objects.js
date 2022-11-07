@@ -46,7 +46,7 @@ export const product =[
     },
     {
         mainImg: "../images/img6.jpeg",
-        miniImg: "../mini-images/mini-img6.jpeg",
+        miniImg: "../mini-images/mini6.jpeg",
         hoverText:"Steay Staedy",
         miniText:"Yuri",
         miniBtn: "pro",
@@ -55,7 +55,7 @@ export const product =[
     },
     {
         mainImg: "../images/img7.jpeg",
-        miniImg: "../mini-images/mini-img7.jpeg",
+        miniImg: "../mini-images/mini7.jpeg",
         hoverText:"CyberPunk",
         miniText:"Filtran",
         miniBtn: "pro",
@@ -64,7 +64,7 @@ export const product =[
     },
     {
         mainImg: "../images/img8.jpeg",
-        miniImg: "../mini-images/mini-img8.jpeg",
+        miniImg: "../mini-images/mini8.jpeg",
         hoverText:"Norte - Brand",
         miniText:"Slab | Pixel",
         miniBtn: "team",
@@ -72,7 +72,7 @@ export const product =[
     },
     {
         mainImg: "../images/img8.jpeg",
-        miniImg: "../mini-images/mini-img8.jpeg",
+        miniImg: "../mini-images/mini8.jpeg",
         hoverText:"Vixal+ kal",
         miniText:"Vixtan",
         miniBtn: "pro",
@@ -81,7 +81,7 @@ export const product =[
     },
     {
         mainImg: "../images/img9.jpeg",
-        miniImg: "../mini-images/mini-img9.jpeg",
+        miniImg: "../mini-images/mini9.jpeg",
         hoverText:"Vixal+ kal",
         miniText:"Vixtan",
         miniBtn: "pro",

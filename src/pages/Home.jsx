@@ -25,22 +25,21 @@ import {product} from '../objects.js'
       </div>
     <div className='home-images-wrapper'>
       {
-        productArray.length && productArray.map(({mainImg})=>{
+        productArray.length && productArray.map(({mainImg, miniText, hoverText, miniImg, miniBtn})=>{
           return (<div>
             <button>case Study</button>
           <img src={mainImg} alt="images" className='home-img'/>
           <div className='image-text'>
-             <div><p>Crypto City/ Web site design</p></div>
+             <div><p>{hoverText}</p></div>
              <div>
-            {/* <span></span> */}
             <span className='image-text-heart'>&#10084;</span>
           </div>
           </div>
           <div className='mini-view-section'>
             <div className='mini-image-section'>
-              <span><img src={mini} alt='profile'/></span>
-              <span>Mike | Creative Mint</span>
-              <span className='mini-btn-pro'>Pro</span>
+              <span><img src={miniImg} alt='profile'/></span>
+              <span>{miniText}</span>
+              <span className='mini-btn-pro'>{miniBtn}</span>
             </div>
             <div>
               <p><span className='heart'>&#10084;</span>
