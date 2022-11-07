@@ -10,7 +10,6 @@ import {product} from '../objects.js'
     return e.id === selectedValue;
   })
   
-  console.log(productArray);
   return (
     <>
     <Video videoUrl={videoSrc}/>
@@ -25,8 +24,8 @@ import {product} from '../objects.js'
       </div>
     <div className='home-images-wrapper'>
       {
-        productArray.length && productArray.map(({mainImg, miniText, hoverText, miniImg, miniBtn})=>{
-          return (<div>
+        productArray.length && productArray.map(({mainImg, miniText, hoverText, miniImg, miniBtn}, index)=>{
+          return (<div key={index}>
             <button>case Study</button>
           <img src={mainImg} alt="images" className='home-img'/>
           <div className='image-text'>

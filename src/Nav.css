@@ -20,6 +20,20 @@ body{
     list-style-type: none;
     text-decoration: none;
 }
+.App{
+    position: relative;
+}
+.topIcon{
+    position: absolute;
+    position: fixed;
+    bottom: 2%;
+    right: 10px;
+    transition: transform, .3s ease-in-out;
+}
+.topIcon img{
+    width: 40px;
+    height: 40px;
+}
 .nav-container{
     display: flex;
     -ms-flex-pack: justify;

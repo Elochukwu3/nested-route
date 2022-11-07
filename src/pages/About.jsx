@@ -5,7 +5,9 @@ export default function About() {
   return (
     <>
     <Video videoUrl={videoSrc}/>
-    <div>About</div>
+    <div>
+      
+    </div>
     </>
   )
 }

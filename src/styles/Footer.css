@@ -1,0 +1,30 @@
+
+footer{
+    display: flex;
+    justify-content: center;
+
+}
+footer .footer-comp{
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem .4rem;
+    align-items: center;
+    border-top: 1px solid #ddd;
+    margin: 2rem 0;
+    font-size: .8008rem;
+    width: 85%;
+    color: rgb(160, 157, 157);
+}
+.footer-inner{
+    display: flex;
+    align-items: center;
+}
+.footer-inner p{
+    padding-right: .6rem;
+}
+.footer-inner img{
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+}
