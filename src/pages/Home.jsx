@@ -1,17 +1,18 @@
-import React from 'react';
+import React, {useState} from 'react';
 import image from '../plays/img1.jpeg';
 import mini from '../plays/mini-img1.jpeg';
 import {Video }from "../Video"
 import videoSrc from '../plays/video.mp4'
 import '../styles/Home.css'
  function Home() {
+  const [selectedValue, setSelectedValue] = useState('')
   return (
     <>
     <Video videoUrl={videoSrc}/>
     <section className='home-section'>
     <main className='home-section-main'>
       <div className='select-div-wrapper'>
-        <select id='items' className='home-selections'>
+        <select id='items' className='home-selections' onChange={(e)=>setSelectedValue(e.target.value)}>
         <option value={'item1'}>Popular</option>
           <option value={'item2'}>Designs</option>
           <option value={'item3'}>Stock</option>
