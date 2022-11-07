@@ -54,21 +54,90 @@
     flex-direction: row;
     align-items: center;
     width: 100%;
+    min-width: none;
     flex-wrap: wrap;
 }
 .home-images-wrapper > div{
     position: relative;
-    width: 30%;
+    width: 300px;
     margin: 0 .5rem;
     /* overflow: hidden; */
 }
+
 .home-images-wrapper > div button{
+    display: -ms-inline-flexbox;
+    display: inline-flex;
     position: absolute;
-    top: 0;
-    left: 2%;
+    top: 12px;
+    left: 12px;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    height: 28px;
+    border-radius: 14px;
+    opacity: 0.7;
+    background: #0d0c22;
     color: #fff;
+    font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+    line-height: 14px;
+    text-transform: uppercase;
+    cursor: pointer;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: 120px;
+    padding: 1rem 1rem;
+    z-index: 2;
+    transition:  background, .3s ease-in-out;
+}
+.home-images-wrapper > div:hover button{
+    opacity: 0.1;
 }
 .home-images-wrapper > div .home-img{
     /* min-width: 1rem; */
-    width: 300px;
+    width: 100%;
+}
+.mini-view-section{
+    display: flex;
+    justify-content: space-between;
+    word-wrap: normal;
+    flex-wrap: nowrap;
+    align-items: center;
+    font-size: .8rem;
+    padding: 0 .4rem;
+    box-shadow: 0px 0px 2px #fff;
+    font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.mini-image-section{
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    color: black;
+    text-transform: capitalize;
+}
+.mini-view-section img{
+    border-radius: 50%;
+    margin-right: .4rem;
+}
+.mini-image-section +  div{
+    display: flex;
+    align-items: center;
+}
+.mini-image-section +  div p{
+    padding-left: .4rem;
+    color: #3d3d4e;
+    cursor: pointer;
+}
+.mini-image-section +  div p span{
+    padding-left: .1rem;
+    font-weight: 500;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+   
+}
+.heart:hover, .eye:hover{
+    color: #ea4c89;
 }

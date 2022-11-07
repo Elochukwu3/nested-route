@@ -1,5 +1,6 @@
 import React from 'react';
 import image from '../plays/img1.jpeg';
+import mini from '../plays/mini-img1.jpeg';
 import {Video }from "../Video"
 import videoSrc from '../plays/video.mp4'
 import '../styles/Home.css'
@@ -20,6 +21,22 @@ import '../styles/Home.css'
         <div>
           <button>case Study</button>
         <img src={image} alt="images" className='home-img'/>
+        <div className='mini-view-section'>
+          <div className='mini-image-section'>
+            <span><img src={mini} alt='profile'/></span>
+            <span>Mike | Creative Mint</span>
+            <spn>Pro</spn>
+          </div>
+          <div>
+            <p><span className='heart'>&#10084;</span>
+            <span>80</span>
+            </p>
+            <p>
+            <span className='eye'>&#128065;</span>
+            <span>5.7k</span>
+            </p>
+          </div>
+        </div>
         </div>
         <div>
         <img src={image} alt="images" className='home-img'/>
