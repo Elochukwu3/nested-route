@@ -21,11 +21,18 @@ import '../styles/Home.css'
         <div>
           <button>case Study</button>
         <img src={image} alt="images" className='home-img'/>
+        <div className='image-text'>
+           <div><p>Crypto City/ Web site design</p></div>
+           <div>
+          {/* <span></span> */}
+          <span className='image-text-heart'>&#10084;</span>
+        </div>
+        </div>
         <div className='mini-view-section'>
           <div className='mini-image-section'>
             <span><img src={mini} alt='profile'/></span>
             <span>Mike | Creative Mint</span>
-            <spn>Pro</spn>
+            <spn className='mini-btn-pro'>Pro</spn>
           </div>
           <div>
             <p><span className='heart'>&#10084;</span>
@@ -38,13 +45,13 @@ import '../styles/Home.css'
           </div>
         </div>
         </div>
-        <div>
+        {/* <div>
         <img src={image} alt="images" className='home-img'/>
         </div>
   
         <div>
         <img src={image} alt="images" className='home-img'/>
-        </div>
+        </div> */}
   
     </div>
     </main>
