@@ -1,0 +1,74 @@
+
+
+
+.home-section{
+    display: block;
+    width: 100%;
+    max-width: 100vw;
+    transition: background, ease-in-out;
+}
+.home-section-main{
+   width: 100%;
+   height: auto;
+}
+.select-div-wrapper{
+    display: flex;
+    justify-content: flex-start;
+    flex-grow: 0;
+    flex-wrap: nowrap;
+    padding: 1.7rem;
+}
+.select-div-wrapper .home-selections{
+        min-width: 115px;
+        font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        white-space: nowrap;
+        display: inline-block;
+        position: relative;
+        box-sizing: border-box;
+        height: 40px;
+        -webkit-transition: color 200ms ease;
+        transition: color 200ms ease;
+        border-radius: 8px;
+        outline: none;
+        background: #fff;
+        padding: 10px 16px;
+        text-decoration: none;
+        cursor: pointer;
+         white-space: nowrap;
+       border: 1px solid gainsboro;
+    
+}
+.home-selections option{
+     border-radius: 13px;
+}
+.select-div-wrapper .home-selections:hover{
+    background-color: transparent;
+    -webkit-box-shadow: 0px 0px 0px 1px #ea4c89 inset;
+    box-shadow: 0px 0px 0px 1px #ea4c89 inset;
+    color: #0d0c22;
+
+}
+.home-images-wrapper{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+}
+.home-images-wrapper > div{
+    position: relative;
+    width: 30%;
+    margin: 0 .5rem;
+    /* overflow: hidden; */
+}
+.home-images-wrapper > div button{
+    position: absolute;
+    top: 0;
+    left: 2%;
+    color: #fff;
+}
+.home-images-wrapper > div .home-img{
+    /* min-width: 1rem; */
+    width: 300px;
+}

@@ -205,15 +205,3 @@ body{
     appearance: none;
     border: unset;
 }
-.home-container{
-    width: 100%;
-    padding: 1.6rem;
-    display: flex;
-    justify-content: center;
-}
-.home-container img{
-    width: 30%;
-    object-fit: cover;
-    border-radius: 8px;
-    padding-left: 1rem;
-}
