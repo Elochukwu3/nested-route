@@ -1,4 +1,5 @@
 
+
 .about-container{
      position: relative;
     z-index: 1;
@@ -49,4 +50,38 @@
     margin-right: auto;
     margin-left: auto;
     mix-blend-mode: multiply;
+}
+.about-section-two{
+    display: flex;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    max-width: 70rem;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+.inview .dribbble-constellation svg .point-1 {
+    -webkit-animation-duration: 3s;
+    animation-duration: 3s;
+    -webkit-animation-play-state: running;
+    animation-play-state: running;
+    -webkit-animation-delay: 2.15s;
+    animation-delay: 2.15s;
+}
+.inview .dribbble-constellation svg .point-2 {
+    -webkit-animation-duration: 4s;
+    animation-duration: 4s;
+    -webkit-animation-play-state: running;
+    animation-play-state: running;
+    -webkit-animation-delay: 4.3s;
+    animation-delay: 4.3s;
+}
+.inview .dribbble-constellation svg .point-3 {
+    -webkit-animation-duration: 4s;
+    animation-duration: 4s;
+    -webkit-animation-delay: 6s;
+    animation-delay: 6s;
 }

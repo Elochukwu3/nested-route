@@ -14,6 +14,7 @@ import Navbar from './Navbar'
 import {AuthProfile} from './AuthProfile';
 import arrow from './plays/arrow.png'
 import Footer from "./Footer";
+import Loader from "./pages/Loader";
 const LazyHome = React.lazy(()=> import('./pages/Home'))
 
 
@@ -33,8 +34,9 @@ function App() {
       <section>
       <AuthProvider>
      <Navbar/>
+    
        <Routes>
-        <Route path="/" element={<React.Suspense fallback={"loading..."}><LazyHome/></React.Suspense>}/>
+        <Route path="/" element={<React.Suspense fallback={ <Loader/>}><LazyHome/></React.Suspense>}/>
         <Route path="about" element={<About/>}/>
         <Route path="profile" element={<AuthProfile><Profile/></AuthProfile>}/>
         <Route path="highfashion" element={<HighFashion/>}/>
