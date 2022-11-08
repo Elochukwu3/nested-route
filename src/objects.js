@@ -89,3 +89,35 @@ export const product =[
     },
 ]
 
+export const WomenCloth =[
+    {
+        img: "../women/w1.webp",
+        amount: "$1,2000",
+        name: "Italiana Smiit"
+    },
+    {
+        img: "../women/w2.webp",
+        amount: "$1,2000",
+        name: "Italiana Smiit"
+    },
+    {
+        img: "../women/w3.jpeg",
+        amount: "$1,2000",
+        name: "Italiana Smiit"
+    },
+    {
+        img: "../women/w4.jpeg",
+        amount: "$1,2000",
+        name: "Italiana Smiit"
+    },
+    {
+        img: "../women/w5.jpeg",
+        amount: "$1,2000",
+        name: "Italiana Smiit"
+    },
+    {
+        img: "../women/w6.webp",
+        amount: "$1,2000",
+        name: "Italiana Smiit"
+    },
+]
