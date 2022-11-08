@@ -1,8 +1,7 @@
 import React, {useState} from 'react';
-import mini from '../plays/mini-img1.jpeg';
 import {Video }from "../Video"
 import videoSrc from '../plays/video.mp4'
-import '../styles/Home.css'
+import '../styles/Home.css';
 import {product} from '../objects.js'
  function Home() {
   const [selectedValue, setSelectedValue] = useState('product')

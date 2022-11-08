@@ -1,5 +1,5 @@
 
-export const product =[
+export const designer =[
     {
         mainImg: "../img2/img1.jpeg",
         miniImg: "../mini-img2/mini1.jpeg",
@@ -82,6 +82,22 @@ export const product =[
     {
         mainImg: "../img2/img9.jpeg",
         miniImg: "../mini-img2/mini9.jpeg",
+        hoverText:"Vixal+ kal",
+        miniText:"Vixtan",
+        miniBtn: "pro",
+        id: "stocks"
+    },
+    {
+        mainImg: "../img2/img10.jpeg",
+        miniImg: "../mini-img2/mini10.jpeg",
+        hoverText:"Vixal+ kal",
+        miniText:"Vixtan",
+        miniBtn: "pro",
+        id: "stocks"
+    },
+    {
+        mainImg: "../img2/img11.jpeg",
+        miniImg: "../mini-img2/mini11.jpeg",
         hoverText:"Vixal+ kal",
         miniText:"Vixtan",
         miniBtn: "pro",

@@ -1,12 +1,14 @@
 import React from 'react';
 import {NavLink, Outlet} from "react-router-dom"
-
+import '../styles/Store.css'
 export default function Store() {
   return (
     <>
-    <div>
-     <p> <input type={'search'}/></p>
-      <NavLink to={'newproduct'}>
+    <section>
+    <div className='store-wrapper'>
+     <div className='cart-container'><i className='fas fa-search'></i></div>
+     <div>
+     <NavLink to={'newproduct'}>
         New Product
       </NavLink>
       <NavLink to={'menproduct'}>
@@ -15,8 +17,10 @@ export default function Store() {
       <NavLink to={'womenproduct'}>
         Women Wears
       </NavLink>
+     </div>
     </div>
     <Outlet/>
+    </section>
     </>
   )
 }
