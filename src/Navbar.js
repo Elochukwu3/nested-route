@@ -5,7 +5,7 @@ import "./Nav.css";
 // import { Video } from "./Video";
 
 export default function Navbar() {
-  const{user, logOut} = useAuthentication()
+  const{user, logOut, Appearance} = useAuthentication()
  const navigate = useNavigate()
   const signOut =()=>{
     logOut()
@@ -42,7 +42,7 @@ export default function Navbar() {
             <NavLink to={"/highfashion"}>Designers</NavLink>
           </span>
           <span>
-            <NavLink to={'/store'}>Store</NavLink>
+            <NavLink to={'/store'} onClick={Appearance}>Store</NavLink>
           </span>
           <span>
             <NavLink to={'/profile'}>Profile</NavLink>

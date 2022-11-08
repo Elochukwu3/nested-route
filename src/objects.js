@@ -120,4 +120,53 @@ export const WomenCloth =[
         amount: "$1,2000",
         name: "Italiana Smiit"
     },
+    {
+        img: "../women/w7.jpg",
+        amount: "$1,2000",
+        name: "Italiana Smiit"
+    },
+    {
+        img: "../women/w8.jpg",
+        amount: "$1,2000",
+        name: "Italiana Smiit"
+    },
+    {
+        img: "../women/review_1.jpg",
+        amount: "$1,2000",
+        name: "Italiana Smiit"
+    },
+   
+]
+export const men =[
+    {
+        img: "../women/person_1.jpg",
+        amount: "$3,200",
+        name: "Gell Siute"
+    },
+   
+    {
+        img: "../women/person_2.jpg",
+        amount: "$2,000",
+        name: "Biendo Vak"
+    },
+    {
+        img: "../women/person_3.jpg",
+        amount: "$200",
+        name: "Spriat blur"
+    },
+    {
+        img: "../women/person_4.jpg",
+        amount: "$100",
+        name: "Office drain"
+    },
+    {
+        img: "../women/product-8.jpg",
+        amount: "$1,000",
+        name: "Odias jacket"
+    },
+    {
+        img: "../women/pic9.jpg",
+        amount: "$1,000",
+        name: "Odias jacket"
+    },
 ]
