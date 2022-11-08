@@ -29,6 +29,7 @@ body{
     bottom: 2%;
     right: 10px;
     transition: transform, .3s ease-in-out;
+    z-index: 8;
 }
 .topIcon img{
     width: 40px;
