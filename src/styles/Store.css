@@ -3,10 +3,34 @@
     display: flex;
     justify-content: flex-end;
     width: 100%;
-    padding: 1rem 3rem 2rem 0rem;
+    padding: 1rem 3rem 1rem 0rem;
     align-items: center;
-    background-color: rgba(87, 86, 86, 0.3);
+    background-color: rgba(59, 59, 59, 0.7);
     margin-bottom: 9px;
+}
+.cart-container p{
+   position: relative;
+}
+.cart-container p::after{
+    content: '0';
+    /* display: inline-block; */
+    position: absolute;
+    top: -50%;
+    right: -50%;
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: #fff;
+    border: unset;
+    font-size: .8em;
+   
+}
+.cart-container i{
+    color: #fff;
 }
 .store-wrapper a{
     padding: .2rem 1rem;

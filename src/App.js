@@ -27,6 +27,11 @@ function App() {
       }else if(scroll && window.pageYOffset <= 400){
           setScroll(false)
       }
+  };
+  const scrollUp = ()=>{
+    window.scrollTo(0,0)
+    window.scrollIntoView({ behavior: 'smooth' })
+    
   }
   window.addEventListener("scroll", checkScroll)
   return (
@@ -49,9 +54,9 @@ function App() {
         </Route>
        </Routes>
      </AuthProvider>
-     <a href="#top" className="topIcon" style={{display: scroll ? "block": "none"}}>
+     <p className="topIcon" style={{display: scroll ? "block": "none"}} onClick={scrollUp}>
       <img src={arrow} alt='arrow'/>
-     </a>
+     </p>
      <Footer/>
      
       </section>

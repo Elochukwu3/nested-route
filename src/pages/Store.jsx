@@ -10,7 +10,8 @@ export default function Store() {
       <section>
         <div className="store-wrapper">
           <div className="cart-container">
-            <img src="../women/option_2.png" style={{width: '30px', height: "30px"}}/>
+            {/* <img src="../women/option_2.png" style={{width: '30px', height: "30px"}}/> */}
+           <p> <i className="fas fa-cart-plus"></i></p>
           </div>
           <div>
             <NavLink to={"newproduct"} onClick={changeAppearance}>
