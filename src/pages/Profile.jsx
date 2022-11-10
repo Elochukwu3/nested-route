@@ -102,15 +102,16 @@ const Profile = () => {
                 </div>
                 <div className="section-wrapper">
                       <div className="board-animation">
-                        <p style={{'--i': -1}}>AAPl</p>
-                        <p style={{'--i': -2}}>BRK-B</p>
-                        <p style={{'--i': -3}}>DIS</p>
-                        <p style={{'--i': -4}}>GE</p>
-                        <p style={{'--i': -5}}>HD</p>
-                        <p style={{'--i': -6}}>NIKE</p>
-                        <p style={{'--i': -7}}>SBUX</p>
-                        <p style={{'--i': -8}}>DOWJ</p>
+                        <p style={{'--i': -1}} className={"p-1"}>AAPl</p>
+                        <p style={{'--i': -1}} className={"p-2"}>BRK-B</p>
+                        <p style={{'--i': -1}} className={"p-3"}>DIS</p>
+                        <p style={{'--i': -1}} className={"p-4"}>GE</p>
+                        <p style={{'--i': -1}} className={"p-5"}>HD</p>
+                        <p style={{'--i': -1}} className={"p-6"}>NIKE</p>
+                        <p style={{'--i': -1}} className={"p-7"}>SBUX</p>
+                        <p style={{'--i': -1}} className={"p-8"}>DOWJ</p>
                       </div>
+
                 </div>
               </div>
             </div>

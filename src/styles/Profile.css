@@ -179,12 +179,13 @@
     overflow: hidden;
 }
 .board-animation p{
-    animation: moverr 4s 2s infinite ease;
-    animation-delay: calc(var(--i)* 100px);
+    animation: moverr 7s 2s infinite ease;
+  transition: transform, 2s ease-in-out;
 }
 .board-animation > p{
-    /* animation: moverr 2s 2s infinite ease; */
-    animation-delay: calc(var(--i)* 100px);
+
+    animation-delay: calc(var(--i)* 200ms);
+
 }
 
 @keyframes moverr {
@@ -192,9 +193,12 @@
         transform: translateX(0px);
     }
     50%{
-        transform: translateX(-100px); 
+        transform: translateX(calc(var(--i)* 200px)); 
     }
-    60%{
+    100%{
+        transform: translateX(calc(var(--i)* 300px)); 
+    }
+    /* 60%{
         transform: translateX(-100px);
     }
     80%{
@@ -202,6 +206,6 @@
     }
     100%{
         transform: translateX(-100px);
-    }
+    } */
    
 }
