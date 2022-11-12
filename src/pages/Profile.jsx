@@ -8,6 +8,7 @@ const Profile = () => {
   const file = useRef();
   const chooseImage = () => {
     file.current.click();
+    console.log(file.current);
   };
 
   return (
@@ -101,17 +102,20 @@ const Profile = () => {
                   </div>
                 </div>
                 <div className="section-wrapper">
+                  <marquee direction="left">
+                  
                       <div className="board-animation">
-                        <p style={{'--i': -1}} className={"p-1"}>AAPl</p>
-                        <p style={{'--i': -1}} className={"p-2"}>BRK-B</p>
-                        <p style={{'--i': -1}} className={"p-3"}>DIS</p>
-                        <p style={{'--i': -1}} className={"p-4"}>GE</p>
-                        <p style={{'--i': -1}} className={"p-5"}>HD</p>
-                        <p style={{'--i': -1}} className={"p-6"}>NIKE</p>
-                        <p style={{'--i': -1}} className={"p-7"}>SBUX</p>
-                        <p style={{'--i': -1}} className={"p-8"}>DOWJ</p>
+                        <p>AAPl</p>
+                        <p>BRK-B</p>
+                        <p>DIS</p>
+                        <p>GE</p>
+                        <p>HD</p>
+                        <p>NIKE</p>
+                        <p>SBUX</p>
+                        <p>DOWJ</p>
                       </div>
 
+                  </marquee>
                 </div>
               </div>
             </div>

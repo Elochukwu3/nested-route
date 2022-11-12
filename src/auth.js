@@ -1,6 +1,6 @@
 
 import React,{createContext, useContext, useState} from 'react';
-const initial={user:null, input:''} ;
+
 
 const AuthentContext = createContext(null)
 export const AuthProvider = ({children}) => {
@@ -11,13 +11,13 @@ export const AuthProvider = ({children}) => {
   const Appearance = ()=>{
     setDisplay(false)
   }
-    const[users, setUser] = useState(initial)
-    const{user, input}  = users
-    const logIn = (user) => setUser({...users, user: user})
-    const loginOut = () => setUser({...users, user:null})
-    const changeInput =(e)=> setUser({...users, input: e.target.value})
+    const[users, setUser] = useState(null)
+   
+    const logIn = (user) => setUser(user)
+    const loginOut = () => setUser(null)
+   
   return (
-    <AuthentContext.Provider value={{users,user,input, logIn, loginOut, changeInput, display, changeAppearance, Appearance }}>
+    <AuthentContext.Provider value={{users,logIn, loginOut, display, changeAppearance, Appearance }}>
         {children}
     </AuthentContext.Provider>
   )

@@ -179,33 +179,6 @@
     overflow: hidden;
 }
 .board-animation p{
-    animation: moverr 7s 2s infinite ease;
-  transition: transform, 2s ease-in-out;
-}
-.board-animation > p{
-
-    animation-delay: calc(var(--i)* 200ms);
-
-}
-
-@keyframes moverr {
-    0%{
-        transform: translateX(0px);
-    }
-    50%{
-        transform: translateX(calc(var(--i)* 200px)); 
-    }
-    100%{
-        transform: translateX(calc(var(--i)* 300px)); 
-    }
-    /* 60%{
-        transform: translateX(-100px);
-    }
-    80%{
-        transform: translateX(-100px);
-    }
-    100%{
-        transform: translateX(-100px);
-    } */
-   
+    /* animation: moverr 10s 2s infinite ease; */
+  transition: 2s ease-in-out;
 }
