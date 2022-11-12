@@ -4,6 +4,7 @@ import { useAuthentication } from "../auth";
 import "../styles/Sign.css";
 import useLocalstorage from "../useLocalStorage";
 
+//initializer for useReducer hook
 const initializer = {
   firstname: "",
   lastname: "",
@@ -234,9 +235,9 @@ export const SignIn = () => {
                     </div>
                   </div>
                 </form>
-                <div style={{ display: "none" }} ref={welcomeUser}>
+                <div style={{ display: "none" }} ref={welcomeUser} className="welcome-ok">
                   <p>Welcome user {firstname}</p>
-                  <p>Click Ok to move to the dasgboard</p>
+                  <p>Click Ok to move to continue</p>
                   <button onClick={navigatePage}>Ok</button>
                 </div>
               </div>
