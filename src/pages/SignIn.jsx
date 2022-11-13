@@ -77,8 +77,8 @@ export const SignIn = () => {
   };
   const formHeaderText = useRef(null);
   const welcomeUser = useRef(null);
-
   const [val, setVal] = useLocalstorage(password, state);
+  let header =[formHeaderText ]
   const submittedForm = (e) => {
     e.preventDefault();
     e.target.style.display = "none"; //on form submitt let the form disappear in other to welcome the user
@@ -90,11 +90,11 @@ export const SignIn = () => {
   return (
     <main className="main-sign-in">
       <div className="form-container">
-        <Login />
+        <Login formHeader={header[0]}/>
         <div className="form-inner">
           <div className="form-wrapper">
             <div className="form-cont">
-              <div className="form-content">
+              <div className="form-content hide-signup">
                 <section className="header">
                   <div className="contact-header" ref={formHeaderText}>
                     Form Details
