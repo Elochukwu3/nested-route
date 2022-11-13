@@ -57,7 +57,7 @@ export default function Navbar() {
           </li>
           <li className="signUp">
             {
-              !users ? <NavLink to={'/signin'}>Sign up</NavLink>: <NavLink onClick={signOut}>Sign Out</NavLink>
+              !users ? <NavLink to={'/signin'}>Sign In</NavLink>: <NavLink onClick={signOut}>Sign Out</NavLink>
             }
           </li>
         </ul>
