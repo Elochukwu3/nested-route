@@ -6,6 +6,7 @@ import "../styles/Sign.css";
 export default function Login({ formHeader }) {
   const refDiv = useRef(null);
   const [logDetails, setLoginDetails] = useState({ passcode: "", emal: "" });
+  const [warning, setWarning] = useState(false);
   const changeValue = (e) => {
     setLoginDetails({
       ...logDetails,
@@ -25,11 +26,14 @@ export default function Login({ formHeader }) {
       if (password === logDetails.passcode && logDetails.emal === email) {
         logIn(firstname); //function call: callback function that adds user to the login function
         navigate(reDirect, { replace: true });
-      }
+      }else{}
+}else{
+        setWarning(true)
+        
     }
   };
 
-  //
+  
   const overWrite = () => {
     const parent = refDiv.current.parentElement;
     parent.parentElement.className = "login-form-none";
@@ -59,6 +63,7 @@ export default function Login({ formHeader }) {
             onChange={changeValue}
           />
         </div>
+        <p style={{display: warning?"block":"none", color:"red", fontSize:".7rem"}}>Email or uusername is incorrect, try again or Sign up</p>
         <div
           style={{
             display: "flex",
