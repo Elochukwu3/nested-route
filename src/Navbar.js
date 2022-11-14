@@ -17,11 +17,21 @@ export default function Navbar() {
     setMobile(!mobile);
   };
   const collapseDiv = useRef(null);
+  const mobileNavigator = useRef(null);
   const collaspseMenu = () => {
     const parentDiv = collapseDiv.current;
     parentDiv.className = "collapse-menu";
     setMobile(false);
   };
+  if (mobile) {
+    let iconLink = mobileNavigator.current.children;
+    let tag = [...iconLink];
+    tag.forEach((item) => {
+      item.addEventListener("click", () => {
+        setMobile(false);
+      });
+    });
+  }
   return (
     <section>
       <div className="nav-container">
@@ -55,7 +65,7 @@ export default function Navbar() {
             <div className="close" onClick={collaspseMenu}>
               <i className="fas fa-times"></i>
             </div>
-            <div className="menu-tab">
+            <div className="menu-tab" ref={mobileNavigator}>
               <span className="link">
                 <NavLink to={"/about"}>About</NavLink>
               </span>

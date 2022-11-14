@@ -51,28 +51,28 @@ export default function About() {
                     transform="translate(111 103)"
                     fill="url(#paint0_radial)"
                     stroke="url(#paint1_radial)"
-                    stroke-width="6"
+                    strokeWidth="6"
                   ></circle>
                   <path
-                    class="path-1"
+                    className="path-1"
                     d="M197.991 437.059C173.794 271.784 103.259 121.559 0 0"
                     transform="translate(259.761 120.951)"
                     stroke="url(#paint2_radial)"
-                    stroke-width="6"
+                    strokeWidth="6"
                   ></path>
                   <path
-                    class="path-2"
+                    className="path-2"
                     d="M0 149.436C19.1211 150.604 38.7527 151.037 58.7612 150.677C237.762 147.451 384.327 81.7917 404.4 0"
                     transform="translate(112.212 169.296)"
                     stroke="url(#paint3_radial)"
-                    stroke-width="6"
+                    strokeWidth="6"
                   ></path>
                   <path
-                    class="path-3"
+                    className="path-3"
                     d="M0 176.58C50.2817 72.1057 157.142 0 280.844 0C322.68 0 362.59 8.24744 399.037 23.2052"
                     transform="translate(190.656 345)"
                     stroke="url(#paint4_radial)"
-                    stroke-width="6"
+                    strokeWidth="6"
                   ></path>
                   <circle
                     cx="4"
@@ -82,14 +82,14 @@ export default function About() {
                     fill="white"
                   ></circle>
                   <circle
-                    class="point-1"
+                    className="point-1"
                     opacity="0.2"
                     cx="12"
                     cy="12"
                     r="11"
                     transform="translate(249 108)"
                     stroke="white"
-                    stroke-width="2"
+                    strokeWidth="2"
                   ></circle>
                   <circle
                     cx="4"
@@ -99,14 +99,14 @@ export default function About() {
                     fill="white"
                   ></circle>
                   <circle
-                    class="point-2"
+                    className="point-2"
                     opacity="0.2"
                     cx="12"
                     cy="12"
                     r="11"
                     transform="translate(100 305)"
                     stroke="white"
-                    stroke-width="2"
+                    strokeWidth="2"
                   ></circle>
                   <circle
                     cx="4"
@@ -116,14 +116,14 @@ export default function About() {
                     fill="white"
                   ></circle>
                   <circle
-                    class="point-3"
+                    className="point-3"
                     opacity="0.2"
                     cx="12"
                     cy="12"
                     r="11"
                     transform="translate(179 510)"
                     stroke="white"
-                    stroke-width="2"
+                    strokeWidth="2"
                   ></circle>
                   <circle
                     cx="4"
@@ -133,14 +133,14 @@ export default function About() {
                     fill="white"
                   ></circle>
                   <circle
-                    class="point-4"
+                    className="point-4"
                     opacity="0.2"
                     cx="12"
                     cy="12"
                     r="11"
                     transform="translate(446 546)"
                     stroke="white"
-                    stroke-width="2"
+                    strokeWidth="2"
                   ></circle>
                   <circle
                     cx="4"
@@ -150,14 +150,14 @@ export default function About() {
                     fill="white"
                   ></circle>
                   <circle
-                    class="point-5"
+                    className="point-5"
                     opacity="0.2"
                     cx="12"
                     cy="12"
                     r="11"
                     transform="translate(578 356)"
                     stroke="white"
-                    stroke-width="2"
+                    strokeWidth="2"
                   ></circle>
                   <circle
                     cx="4"
@@ -167,14 +167,14 @@ export default function About() {
                     fill="white"
                   ></circle>
                   <circle
-                    class="point-6"
+                    className="point-6"
                     opacity="0.2"
                     cx="12"
                     cy="12"
                     r="11"
                     transform="translate(505 157)"
                     stroke="white"
-                    stroke-width="2"
+                    strokeWidth="2"
                   ></circle>
                   <defs>
                     <radialGradient
@@ -187,15 +187,15 @@ export default function About() {
                     >
                       <stop
                         offset="0.436464"
-                        stop-color="#667AFF"
-                        stop-opacity="0"
+                        stopColor="#667AFF"
+                        stopOpacity="0"
                       ></stop>
                       <stop
                         offset="0.774416"
-                        stop-color="#667AFF"
-                        stop-opacity="0"
+                        stopColor="#667AFF"
+                        stopOpacity="0"
                       ></stop>
-                      <stop offset="1" stop-color="#667AFF"></stop>
+                      <stop offset="1" stopColor="#667AFF"></stop>
                     </radialGradient>
                     <radialGradient
                       id="paint1_radial"
@@ -205,12 +205,12 @@ export default function About() {
                       gradientUnits="userSpaceOnUse"
                       gradientTransform="translate(328 1100) scale(989.645) rotate(-130.369)"
                     >
-                      <stop stop-color="#667AFF"></stop>
-                      <stop offset="0.585635" stop-color="#667AFF"></stop>
+                      <stop stopColor="#667AFF"></stop>
+                      <stop offset="0.585635" stopColor="#667AFF"></stop>
                       <stop
                         offset="1"
-                        stop-color="#667AFF"
-                        stop-opacity="0"
+                        stopColor="#667AFF"
+                        stopOpacity="0"
                       ></stop>
                     </radialGradient>
                     <radialGradient
@@ -221,13 +221,13 @@ export default function About() {
                       gradientUnits="userSpaceOnUse"
                       gradientTransform="matrix(-424 -869 319.686 -422.315 255.396 1090.21)"
                     >
-                      <stop stop-color="#667AFF" stop-opacity="0"></stop>
-                      <stop offset="0.302002" stop-color="#667AFF"></stop>
-                      <stop offset="0.734807" stop-color="#667AFF"></stop>
+                      <stop stopColor="#667AFF" stopOpacity="0"></stop>
+                      <stop offset="0.302002" stopColor="#667AFF"></stop>
+                      <stop offset="0.734807" stopColor="#667AFF"></stop>
                       <stop
                         offset="1"
-                        stop-color="#667AFF"
-                        stop-opacity="0"
+                        stopColor="#667AFF"
+                        stopOpacity="0"
                       ></stop>
                     </radialGradient>
                     <radialGradient
@@ -238,13 +238,13 @@ export default function About() {
                       gradientUnits="userSpaceOnUse"
                       gradientTransform="matrix(-811 319 378.996 -1750.3 627.291 712.854)"
                     >
-                      <stop stop-color="#667AFF" stop-opacity="0"></stop>
-                      <stop offset="0.237569" stop-color="#667AFF"></stop>
-                      <stop offset="0.680482" stop-color="#667AFF"></stop>
+                      <stop stopColor="#667AFF" stopOpacity="0"></stop>
+                      <stop offset="0.237569" stopColor="#667AFF"></stop>
+                      <stop offset="0.680482" stopColor="#667AFF"></stop>
                       <stop
                         offset="1"
-                        stop-color="#667AFF"
-                        stop-opacity="0"
+                        stopColor="#667AFF"
+                        stopOpacity="0"
                       ></stop>
                     </radialGradient>
                     <radialGradient
@@ -255,12 +255,12 @@ export default function About() {
                       gradientUnits="userSpaceOnUse"
                       gradientTransform="matrix(-804 308 186.901 -1584.68 707.894 657.341)"
                     >
-                      <stop stop-color="#667AFF"></stop>
-                      <stop offset="0.585635" stop-color="#667AFF"></stop>
+                      <stop stopColor="#667AFF"></stop>
+                      <stop offset="0.585635" stopColor="#667AFF"></stop>
                       <stop
                         offset="1"
-                        stop-color="#667AFF"
-                        stop-opacity="0"
+                        stopColor="#667AFF"
+                        stopOpacity="0"
                       ></stop>
                     </radialGradient>
                   </defs>
