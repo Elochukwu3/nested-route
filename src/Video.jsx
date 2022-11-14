@@ -33,7 +33,7 @@ export const Video = ({videoUrl}) => {
            
         <div className="videoWrap">
          
-    <video className="videotag" src={videoUrl}  autoPlay  loop muted/>
+    <video className="videotag" src={videoUrl}  autoPlay  loop muted playsInline data-hero-video/>
         
         </div>
       </div>

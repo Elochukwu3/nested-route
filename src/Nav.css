@@ -46,6 +46,7 @@ body{
     width: auto;
     background-color: #fff;
     border-bottom: 1px solid #6e6d7a;
+    
 }
 .nav-container a{
     color:  #6e6d7a;
@@ -93,11 +94,12 @@ body{
     padding-left: 16px;
     text-transform: capitalize;
     font-weight: 400;
+  
 }
 .nav-container nav{
     display: flex;
     align-items: center;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: center;
 }
 .sect-two-nav{
@@ -177,7 +179,6 @@ body{
     display: flex;
     align-items: center;
     flex-direction: column;
-    /* justify-content: center; */
     width: 100%;
     margin-top: 4rem;
 }
@@ -250,6 +251,18 @@ body{
  
 }
 @media(max-width: 912px) {
+    .nav-container{
+        display: flex;
+        -ms-flex-pack: justify;
+        justify-content: space-around;
+        margin-right: 0;
+        margin-left: 0;
+        align-items: center;
+        padding: 1rem 0;
+        width: auto;
+        background-color: #fff;
+        border-bottom: 1px solid #6e6d7a;
+    }
     .icons-bars{
         display: block;
     }
@@ -293,5 +306,52 @@ body{
     .collapse-menu{
         height: 0;
         opacity: 0;
+    }
+   
+    .btns {
+        overflow-x: auto;
+        overflow-y: hidden;
+        white-space: nowrap;
+        scroll-behavior: smooth;
+        -ms-overflow-style: -ms-autohiding-scrollbar;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: none;
+        width: 100%;
+        margin-left: 0;
+        left: 0;
+        right: 0;
+    }
+
+    *::-webkit-scrollbar {
+        border: none;
+        background-color: transparent;
+        display: none;
+     } /* webkit browsers(safari, chrome) */
+    
+    *{
+        scrollbar-color: #404040b3 transparent; /*firefox*/
+     }
+     .navText form{
+        width: 90%;
+        position: relative;
+    }
+    .navText h2{
+        font-size: 24px;
+        font-family: sans-serif;
+        padding-bottom: .5rem;
+    }
+    .backgroundVideo{
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .navText p{
+        font-size: 16px;
+        padding-top: .1rem;
+        font-weight: 800;
+        word-break:keep-all;
+        word-spacing: .1rem;
+        text-align: center;
+        padding-left: .6rem;
+        padding-right: .6rem;
     }
 }
