@@ -9,7 +9,7 @@ export default function Navbar() {
   const navigate = useNavigate();
   const signOut = () => {
     logOut();
-    // navigate("/");
+    navigate("/");
   };
   //media query navbar
   const [mobile, setMobile] = useState(false);
