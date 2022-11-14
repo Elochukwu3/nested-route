@@ -6,9 +6,9 @@ export default function Mapping(prop) {
         <h1 className="women-header">{prop.header}</h1>
       <div className="women-wrapper">
       {prop.item.length &&
-        prop.item.map(({ img, amount, name }) => {
+        prop.item.map(({ img, amount, name }, index) => {
 
-          return ( <div className="inner-women">
+          return ( <div className="inner-women" key={index}>
               <div className="women-img">
                 <img src={img} alt="clothss" />{" "}
               </div>

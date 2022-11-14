@@ -15,6 +15,7 @@ import {AuthProfile} from './AuthProfile';
 import arrow from './plays/arrow.png'
 import Footer from "./Footer";
 import Loader from "./pages/Loader";
+import Search from "./pages/Search";
 const LazyHome = React.lazy(()=> import('./pages/Home'))
 
 
@@ -47,6 +48,7 @@ function App() {
         <Route path="highfashion" element={<HighFashion/>}/>
         <Route path="*" element={<ErrorPage/>}/>
         <Route path="signin" element={<SignIn />}/>
+        <Route path="search" element={<Search/>}/>
         <Route path="store" element={<Store/>}>
           <Route path="newproduct" element={<NewProduct/>}/>
           <Route path="menproduct" element={<MenProduct/>}/>

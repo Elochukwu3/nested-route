@@ -65,7 +65,7 @@ export default function About() {
                     d="M0 149.436C19.1211 150.604 38.7527 151.037 58.7612 150.677C237.762 147.451 384.327 81.7917 404.4 0"
                     transform="translate(112.212 169.296)"
                     stroke="url(#paint3_radial)"
-                    strokewidth="6"
+                    strokeWidth="6"
                   ></path>
                   <path
                     className="path-3"
@@ -187,15 +187,15 @@ export default function About() {
                     >
                       <stop
                         offset="0.436464"
-                        stop-color="#667AFF"
-                        stop-opacity="0"
+                        stopColor="#667AFF"
+                        stopOpacity="0"
                       ></stop>
                       <stop
                         offset="0.774416"
-                        stop-color="#667AFF"
-                        stop-opacity="0"
+                        stopColor="#667AFF"
+                        stopOpacity="0"
                       ></stop>
-                      <stop offset="1" stop-color="#667AFF"></stop>
+                      <stop offset="1" stopColor="#667AFF"></stop>
                     </radialGradient>
                     <radialGradient
                       id="paint1_radial"
@@ -205,12 +205,12 @@ export default function About() {
                       gradientUnits="userSpaceOnUse"
                       gradientTransform="translate(328 1100) scale(989.645) rotate(-130.369)"
                     >
-                      <stop stop-color="#667AFF"></stop>
-                      <stop offset="0.585635" stop-color="#667AFF"></stop>
+                      <stop stopColor="#667AFF"></stop>
+                      <stop offset="0.585635" stopColor="#667AFF"></stop>
                       <stop
                         offset="1"
-                        stop-color="#667AFF"
-                        stop-opacity="0"
+                        stopColor="#667AFF"
+                        stopOpacity="0"
                       ></stop>
                     </radialGradient>
                     <radialGradient
@@ -221,13 +221,13 @@ export default function About() {
                       gradientUnits="userSpaceOnUse"
                       gradientTransform="matrix(-424 -869 319.686 -422.315 255.396 1090.21)"
                     >
-                      <stop stop-color="#667AFF" stop-opacity="0"></stop>
-                      <stop offset="0.302002" stop-color="#667AFF"></stop>
-                      <stop offset="0.734807" stop-color="#667AFF"></stop>
+                      <stop stopColor="#667AFF" stopOpacity="0"></stop>
+                      <stop offset="0.302002" stopColor="#667AFF"></stop>
+                      <stop offset="0.734807" stopColor="#667AFF"></stop>
                       <stop
                         offset="1"
-                        stop-color="#667AFF"
-                        stop-opacity="0"
+                        stopColor="#667AFF"
+                        stopOpacity="0"
                       ></stop>
                     </radialGradient>
                     <radialGradient
@@ -238,13 +238,13 @@ export default function About() {
                       gradientUnits="userSpaceOnUse"
                       gradientTransform="matrix(-811 319 378.996 -1750.3 627.291 712.854)"
                     >
-                      <stop stop-color="#667AFF" stop-opacity="0"></stop>
-                      <stop offset="0.237569" stop-color="#667AFF"></stop>
-                      <stop offset="0.680482" stop-color="#667AFF"></stop>
+                      <stop stopColor="#667AFF" stopOpacity="0"></stop>
+                      <stop offset="0.237569" stopColor="#667AFF"></stop>
+                      <stop offset="0.680482" stopColor="#667AFF"></stop>
                       <stop
                         offset="1"
-                        stop-color="#667AFF"
-                        stop-opacity="0"
+                        stopColor="#667AFF"
+                        stopOpacity="0"
                       ></stop>
                     </radialGradient>
                     <radialGradient
@@ -255,12 +255,12 @@ export default function About() {
                       gradientUnits="userSpaceOnUse"
                       gradientTransform="matrix(-804 308 186.901 -1584.68 707.894 657.341)"
                     >
-                      <stop stop-color="#667AFF"></stop>
-                      <stop offset="0.585635" stop-color="#667AFF"></stop>
+                      <stop stopColor="#667AFF"></stop>
+                      <stop offset="0.585635" stopColor="#667AFF"></stop>
                       <stop
                         offset="1"
-                        stop-color="#667AFF"
-                        stop-opacity="0"
+                        stopColor="#667AFF"
+                        stopOpacity="0"
                       ></stop>
                     </radialGradient>
                   </defs>

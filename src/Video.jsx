@@ -1,7 +1,15 @@
-import React from 'react';
+import { useAuthentication } from './auth';
+import { useNavigate } from 'react-router-dom';
 
 
 export const Video = ({videoUrl}) => {
+ const {search, changeSearch} = useAuthentication()
+  const navigator = useNavigate()
+  const searchItems=(e)=>{
+    e.preventDefault()
+    navigator("/search")
+    
+  }
   return (
   
     <>
@@ -23,9 +31,9 @@ export const Video = ({videoUrl}) => {
                     <p>Millions of designers and agencies around the world showcase their portfolio work</p>
                  <p>on Dribbble - the home to the world’s best design and creative professionals</p>
                 </div>
-                <form>
+                <form onSubmit={searchItems}>
                     <i className="fas fa-search"></i>
-                <input type={'search'} placeholder={"search"}/>
+                <input type={'search'} placeholder={"search"} value={search} onChange={changeSearch}/>
 
                 </form>
             

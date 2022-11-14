@@ -24,14 +24,13 @@ export default function Navbar() {
     setMobile(false);
   };
   if (mobile) {
-    let iconLink =mobileNavigator.current.children
-    let tag=[...iconLink]
-   tag.forEach((item)=>{
-    item.addEventListener("click", ()=>{
-      setMobile(false);
-    })
-   })
-    
+    let iconLink = mobileNavigator.current.children;
+    let tag = [...iconLink];
+    tag.forEach((item) => {
+      item.addEventListener("click", () => {
+        setMobile(false);
+      });
+    });
   }
   return (
     <section>
