@@ -3,6 +3,7 @@ import { useNavigate, useLocation } from "react-router-dom";
 import { useAuthentication } from "../auth";
 import "../styles/Sign.css";
 import useLocalstorage from "../useLocalStorage";
+import Login from "./Login";
 
 //initializer for useReducer hook
 const initializer = {
@@ -76,8 +77,8 @@ export const SignIn = () => {
   };
   const formHeaderText = useRef(null);
   const welcomeUser = useRef(null);
-
   const [val, setVal] = useLocalstorage(password, state);
+  let header =[formHeaderText ]
   const submittedForm = (e) => {
     e.preventDefault();
     e.target.style.display = "none"; //on form submitt let the form disappear in other to welcome the user
@@ -89,10 +90,11 @@ export const SignIn = () => {
   return (
     <main className="main-sign-in">
       <div className="form-container">
+        <Login formHeader={header[0]}/>
         <div className="form-inner">
           <div className="form-wrapper">
             <div className="form-cont">
-              <div className="form-content">
+              <div className="form-content hide-signup">
                 <section className="header">
                   <div className="contact-header" ref={formHeaderText}>
                     Form Details
@@ -235,7 +237,11 @@ export const SignIn = () => {
                     </div>
                   </div>
                 </form>
-                <div style={{ display: "none" }} ref={welcomeUser} className="welcome-ok">
+                <div
+                  style={{ display: "none" }}
+                  ref={welcomeUser}
+                  className="welcome-ok"
+                >
                   <p>Welcome user {firstname}</p>
                   <p>Click Ok to move to continue</p>
                   <button onClick={navigatePage}>Ok</button>
