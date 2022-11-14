@@ -26,14 +26,13 @@ export default function Login({ formHeader }) {
       if (password === logDetails.passcode && logDetails.emal === email) {
         logIn(firstname); //function call: callback function that adds user to the login function
         navigate(reDirect, { replace: true });
-      }else{}
-}else{
-        setWarning(true)
-        
+      } else {
+      }
+    } else {
+      setWarning(true);
     }
   };
 
-  
   const overWrite = () => {
     const parent = refDiv.current.parentElement;
     parent.parentElement.className = "login-form-none";
@@ -43,7 +42,7 @@ export default function Login({ formHeader }) {
   };
   return (
     <div
-      style={{ display: "grid", justifyContent: "center", width: "100vw " }}
+      style={{ display: "grid", justifyContent: "center", width: "100vw", padding:" 1.3rem 0"}}
       className="login-form"
     >
       <div style={{ width: "50vw" }} className="login-inn">
@@ -63,24 +62,27 @@ export default function Login({ formHeader }) {
             onChange={changeValue}
           />
         </div>
-        <p style={{display: warning?"block":"none", color:"red", fontSize:".7rem"}}>Email or uusername is incorrect, try again or Sign up</p>
-        <div
+        <p
           style={{
-            display: "flex",
-            justifyContent: "center",
-            width: "100%",
-            padding: "10px 0",
+            display: warning ? "block" : "none",
+            color: "red",
+            fontSize: ".7rem",
           }}
         >
+          Email or uusername is incorrect, try again or Sign up
+        </p>
+        <div
+         
+          className="login-btn-div"
+        >
           <button
-            style={{ width: "60%", padding: "5px 2px" }}
             onClick={navigatePage}
           >
             Login
           </button>
         </div>
 
-        <div>
+        <div className="signup-text">
           Don't havean account?{" "}
           <i ref={refDiv} onClick={overWrite}>
             Sign Up

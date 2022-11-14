@@ -51,6 +51,18 @@ body{
     color:  #6e6d7a;
     font-size: 1.2rem;
 }
+.link::after{
+    display: block;
+    content: "";
+    width: 0;
+    height: 2px;
+    background-color: red;
+    transition: background, ease-in-out 300ms;
+    /* transform-origin: center center;  */
+}
+.link:hover::after{
+    width: 100%;
+}
 .signUp a{
     display: inline-block;
     position: relative;
@@ -85,6 +97,8 @@ body{
 .nav-container nav{
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 .sect-two-nav{
     display: flex;
@@ -219,4 +233,65 @@ body{
     -moz-appearance: none;
     appearance: none;
     border: unset;
+}
+.icons-bars{
+    display: none;
+}
+.menu-tab-holder{
+    display: block;
+}
+.menu-tab{
+    display: flex;
+    align-items: center;
+   
+}
+.close{
+    display: none ;
+ 
+}
+@media(max-width: 912px) {
+    .icons-bars{
+        display: block;
+    }
+    .menu-tab-holder{
+        display: none;
+    }
+    .menu-mob{
+        background-color: #fff;
+        width: 100vw;
+        height: 100vh;
+        left: 0;
+        right: 0;
+        top: 0;       
+        z-index: 100;
+        position: fixed;
+        display: block;
+    }
+    .menu-tab{
+         flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    }
+    .menu-mob .close{
+        display: flex;
+        justify-content: flex-end;
+        padding: 1.6rem 2rem;  
+    }
+    .menu-mob .close i{
+        color: #0d0c22;
+        font-size: 2em;
+    }
+    .menu-tab a{
+        font-size: 1.5rem;
+        text-transform: uppercase;
+    }
+    .menu-tab span{
+        padding: 1.2rem 0;
+        
+    }
+    .collapse-menu{
+        height: 0;
+        opacity: 0;
+    }
 }

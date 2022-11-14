@@ -240,9 +240,7 @@
     align-items: center;
     width: 100%;
   }
-  /* .login-form{
-    
-  } */
+ 
   .login-form-none{
     opacity: 0 !important;
     transform: translateY(-1000px) !important;
@@ -260,3 +258,22 @@
     transition: 300ms ease-out;
     height: auto;
   }
+  .login-btn-div{
+    display: flex;
+     justify-content: center;
+     margin: 20px 0;
+  }
+  .login-btn-div button{
+    width: 60%;
+    background-color: #ea4c89;
+    padding: .5rem .4rem;
+    border-radius: 8px;
+    border-color: #ea4c89;
+    color: #fff;
+    font-weight: 700;
+  }
+  .signup-text i{
+    color: #ea4c89;
+    font-size: .9rem;
+  }
+  
